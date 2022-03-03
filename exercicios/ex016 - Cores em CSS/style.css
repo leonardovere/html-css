@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+* {
+    font-family: Roboto, Arial, 'Segoe UI';
+    
+}
+
+body {
+    background: linear-gradient(to right, #0388A6, #05DBF2);
+}
+
+main {
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 5px 5px 15px #03718adc;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #020853;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(2, 6, 58, 0.938);
+}
+
+h2 {
+    color: #0388A6;
+}
+
+p {
+    text-align: justify;
+}

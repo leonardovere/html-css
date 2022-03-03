@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            /* Define a largura/espessura da borda */
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen; */
+            border: 10px solid darkgreen;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px;
+            
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+            margin: 20px auto 40px auto;
+
+            /* Para centralizar o conteúdo */
+            /* margin: auto; */
+
+            /* Ocupa uma quantidade da margem, entre a margem e a borda */
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; */
+            outline: 5px dashed yellowgreen;
+        }
+
+        a {
+            border-width: 10px;
+            border-style: dashed;
+            border-color: yellow;
+            padding: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box-Level: Caixas que ocupam toda a linha -->
+    <!-- Inline-Level: Caixas ocupam somente sua largura na linha -->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://github.com/leonardovere" target="_blank">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

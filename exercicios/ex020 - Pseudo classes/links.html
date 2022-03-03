@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        a {
+            color: purple;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Para quando o link já foi visitado */
+        a:visited {
+            color: darkmagenta;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: darkslateblue;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        /* Insere algo Depois do elemento - Pseudo Elemento */
+        .especial::after {
+            content: ' ▨';
+            text-decoration: none;
+            color: grey;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/leonardovere" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

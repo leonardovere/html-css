@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir o seu site em diversos dispositivos diferentes, ou simplesmente redimensione o seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Se o tamanho for menor do que 1050px, carrega a imagem média -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- Para manter a reprodução automatica por padrão o autoplay deve estar setado, para poder ter controle da reprodução o parâmetro controls deve ser setado -->
+    <!-- Formatos suportados: MP3; WAV; OGG -->
+    <audio src="midia/Shine_On-Jeremy_Black.mp3" controls></audio>
+    
+    <!-- Propriedade preload define como será o formato de exibição, por terem áudios com um tamanho muito grande, o ideal é manter sempre setado como metadata -->
+    <!-- loop irá executar o audio novamente após terminar -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3" download="audio.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <!-- Formatos suportados: MP3; WAV; OGG -->
+</body>
+
+</html>

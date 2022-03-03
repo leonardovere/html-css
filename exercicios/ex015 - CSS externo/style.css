@@ -1,0 +1,22 @@
+/* Regras */
+@charset "UTF-8";
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Roboto, Arial, 'Segoe UI';
+    /* Tamanho em px definido no seletor de body para fontes, utiliza um calculo para aumentar de acordo com o padrão */
+    font-size: 20px;
+}
+
+h1 {
+    color: maroon;
+    background-color: goldenrod;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    text-align: justify;
+}
