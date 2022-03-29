@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             /* Por conta do carregamento da página, por mais que possua uma imagem de fundo, é importante configurar uma cor */
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            height: 100vh;
+            /* background-color: black; */
+           /*  background-image: url(imagens/wallpaper002.jpg); */
+            /* height: 100vh;
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat; */
             /* cover -> Cobre toda a tela sem distorcer */
             /* contain -> Prenche na horizontal ou na vertical, sem distorcer a imagem */
+            /* background-size: cover; */
+            /* Define qual é o vinculo da imagem de fundo, com a página */
+            /* background-attachment: fixed; */
+
+            /* Shorthand - Background
+                color > imagem > position > repeat > [size] > attachment 
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            /* Os navegadores não estão aceitando ainda o background-size na shorthand */
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             margin: auto;
             padding: 10px 20px;
             border: 1px solid darkblue;
