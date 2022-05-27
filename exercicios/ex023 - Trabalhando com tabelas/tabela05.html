@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .destaque {
+            background-color: yellowgreen;
+        }
+
+        .verde {
+            background-color: greenyellow;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <!--
+            Com o colgroup é possível destacar todos os elementos de uma determinada coluna. Sendo o mesmo número de <col> igual a quantidade de th na tabela. 
+        -->
+        <colgroup>
+            <col class="amarelo">
+            <col class="verde">
+            <col class="amarelo">
+            <col class="verde">
+            <!-- span -> determina a expanção -->
+            <!-- <col class="col-grupo" span="2"> -->
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Amanda Silva</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Felipe Passos</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Contador</td>
+        </tr>
+        <tr>
+            <td>Ricardo Mendonça</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Empresário</td>
+        </tr>
+        <tr>
+            <td>Carlos Henrique Alves</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+</body>
+
+</html>
