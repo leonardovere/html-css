@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        .alinhamento-esquerdo {
+            text-align: left;
+        }
+
+        .alinhamento-centro {
+            text-align: center;
+        }
+
+        .fundo-cinza {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <thead>
+        <tr class="fundo-cinza">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Diciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="fundo-cinza">
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td class="alinhamento-centro">7.5</td>
+            <td class="alinhamento-centro">9.0</td>
+            <td class="alinhamento-centro">8.2</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td class="alinhamento-centro">6.8</td>
+            <td class="alinhamento-centro">8.7</td>
+            <td class="alinhamento-centro">7.7</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td class="alinhamento-centro">8.0</td>
+            <td class="alinhamento-centro">9.2</td>
+            <td class="alinhamento-centro">8.6</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td class="alinhamento-centro">7.5</td>
+            <td class="alinhamento-centro">9.2</td>
+            <td class="alinhamento-centro">8.3</td>
+        </tr>
+        <tr class="fundo-cinza">
+            <th colspan="4" class="alinhamento-esquerdo" scope="row">Média de exatas</th>
+            <td class="alinhamento-centro">8.2</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td class="alinhamento-centro">9.0</td>
+            <td class="alinhamento-centro">8.4</td>
+            <td class="alinhamento-centro">8.7</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="alinhamento-centro">10</td>
+            <td class="alinhamento-centro">9.5</td>
+            <td class="alinhamento-centro">9.7</td>
+        </tr>
+        <tr>
+            <td>Português</td>
+            <td class="alinhamento-centro">6.8</td>
+            <td class="alinhamento-centro">8.3</td>
+            <td class="alinhamento-centro">7.5</td>
+        </tr>
+        <tr class="fundo-cinza">
+            <th colspan="4" class="alinhamento-esquerdo" scope="row">Média de Humanas</th>
+            <td class="alinhamento-centro">8.6</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+
+</html>
