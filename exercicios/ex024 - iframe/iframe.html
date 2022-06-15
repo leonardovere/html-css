@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+
+    <style>
+        /* O estilo de um iframe prevalesce ao definido na linha */
+        iframe {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        
+        <!-- iframe -> Frame in line -->
+        <!-- scrolling define se o conteúdo pode ser rolado ou não -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="no">
+            <a href="https://www.cursoemvideo.com" rel="external" target="_blank">curso em video</a>
+        </iframe>
+        
+        para aprender a programar.
+    </p>
+
+    <p>
+        O site do
+        
+        <!-- Alguns navegadores mobile não suportam a utilização de iframe -->
+        <!-- Por padrão a dimenssão é de 300x150 -->
+        <iframe src="https://www.google.com" frameborder="0">
+            <a href="https://www.google.com" rel="external" target="_blank">google</a>
+        </iframe>
+
+        também é muito legal, pena que não funciona dentro de um iframe!
+    </p>
+
+    <p>
+        O repositório do Leonardo 
+
+        <iframe src="https://leonardovere.github.io/html-css/" frameborder="0" height="500" width="500">
+            <a href="https://leonardovere.github.io/html-css/" rel="external" target="_blank">github.io</a>
+        </iframe>
+
+        também é muito legal!
+    </p>
+</body>
+</html>
