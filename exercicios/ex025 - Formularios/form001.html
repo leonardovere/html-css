@@ -18,8 +18,15 @@
     <h1>Meu primeiro formulário</h1>
 
     <!-- Todo campo fica dentro de uma tag form -->
+    
     <!-- o atributo autocomplete também pode ser definido na tag form -->
-    <form action="cadastro.php" autocomplete="off">
+    
+    <!-- por padrão todo formulário assume o método de GET, um dos motivos pelo qual a url contém a descrição das informações passadas -->
+
+    <!-- Método GET não é recomendado para enviar dados sensiveis como SENHAS, dados bancários -->
+
+    <!-- O método GET só pode enviar até 3000 bytes de dados, equivalente a 3000 letras -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p>
             <!-- para ligar a descrição com o campo, usa a tag <label>, referenciando no for o id do campo -->
             <label for="nome">Nome:</label>
