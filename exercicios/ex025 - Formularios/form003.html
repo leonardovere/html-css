@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="media">Média</label>
+            <!-- Cria um campo do tipo numérico -->
+            <!-- min e max definem valor mínimo e máximo -->
+            <!-- step define o passo do campo -->
+            <input type="number" id="media" name="media" min="0" max="10" step="0.5" required value="5">
+        </p>
+
+        <p>
+            <label for="mes">Período letivo</label>
+            <input type="month" id="mes" name="mes" required value="2018-08">
+        </p>
+        
+        <p>
+            <label for="diaProva">Dia da prova</label>
+            <input type="date" id="diaProva" name="diaProva" required value="2018-08-30">
+        </p>
+
+        <p>
+            <label for="horaProva">Hora da prova</label>
+            <input type="time" name="horaProva" id="horaProva">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
