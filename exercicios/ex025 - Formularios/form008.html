@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="n1">Número 1: </label>
+            <input type="number" name="n1" id="n1" min="1" max="50" required oninput="document.getElementById('soma').innerHTML = Number(document.getElementById('n1').value) + Number(document.getElementById('n2').value)">
+        </p>
+
+        <p>
+            <label for="n1">Número 2: </label>
+            <input type="number" name="n2" id="n2" min="1" max="50" required oninput="document.getElementById('soma').innerHTML = Number(document.getElementById('n1').value) + Number(document.getElementById('n2').value)">
+        </p>
+
+        <p>
+            <label for="soma">Soma: </label>
+            <!-- output faz parte dos formulários mas não é considerado no momento de envio das informações -->
+            <output id="soma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
